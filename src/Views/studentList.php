@@ -4,9 +4,6 @@
     require_once("Components/header.php");
 ?>
 
-
-
-
 <main>
 <h1>Students class reservations</h1>
 
@@ -52,13 +49,16 @@
                             <td>{$student->getMessage()}</td>
                             <td class='dateSmall'>{$student->getDateTime()}</td>
                             <td class='actionButtons'>
-                            
-                               <div class='boxActionDelete' onclick='executeExample('multipleInputs')'>
-                                  <a href='?action=delete&id={$student->getId()}' class='actionDelete'> delete </a><img class='iconDel' src='./public/images/deleteStudentIcon01.png' alt='Delete Student Icon'/>
-                               </div>
-                               <div class='boxActionEdit'>
-                                  <a href='?action=edit&id={$student->getId()}' class='actionEdit'> edit </a><img class='iconDel' src='./public/images/editStudentIcon01.png' alt='Edit Student Icon'/>
-                               </div>
+                                <div class='boxActionDelete' onclick='executeExample('multipleInputs')'>
+                                  <a href='?action=delete&id={$student->getId()}' class='actionDelete'> delete </a>
+                                  <span class='iconDel'>
+                                  </span>
+                                </div>
+                                 <div class='boxActionEdit'>
+                                  <a href='?action=edit&id={$student->getId()}' class='actionEdit'> edit </a>
+                                  <span class='iconEdi'>
+                                  </span>
+                                 </div>
                             </td>
                         </tr>
                         ";

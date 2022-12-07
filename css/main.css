@@ -109,19 +109,68 @@ h1{
 .boxActionDelete{
     width:100%;
     display:flex;
-    justify-content: space-around;
+ 
 }
+
+.boxActionDelete span{
+    width:25px;
+    height:25px;
+    background:url("../public/images/shim.gif") no-repeat!important;
+
+}
+
+
+.actionDelete:hover+.iconDel{
+    width:25px;
+    height:25px;
+    background:url("../public/images/deleteStudentIcon01.png") no-repeat!important;
+    
+}
+
+.iconDel{
+    width:25px;
+    height:25px;
+    display:none;
+    
+}
+
 
 .boxActionEdit{
     width:100%;
     display:flex;
-    justify-content: space-around;
+    
+   
+}
+
+.boxActionEdit span{
+    width:20px;
+    height:20px;
+    background:url("../public/images/shim.gif") no-repeat!important;
+
+}
+.actionEdit:hover+.iconEdi{
+    width:20px;
+    height:20px;
+    background:url("../public/images/editStudentIcon01.png") no-repeat!important;
+    position:relative;
+    top:5px;
+    display:block;
+
+    
+}
+
+.iconEdi{
+    width:20px;
+    height:20px;
+    display:none;
+    
 }
 
 
 .actionDelete{
     width:40px;
     padding:5px;
+    margin-right:5px;
     background:red;
     border-radius:10px;
     letter-spacing: 1px;
@@ -139,10 +188,12 @@ h1{
 }
 
 
+
 .actionEdit{
     width:40px;
     padding:5px;
     margin-top:5px;
+    margin-right:5px;
     background:orange;
     border-radius:10px;
     letter-spacing: 1px;
