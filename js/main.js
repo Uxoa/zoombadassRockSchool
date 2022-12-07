@@ -1,7 +1,9 @@
-let elems = document.getElementsByClassName('editStudent');
-let confirmIt = function (e) {
-    if (!confirm('Are you sure edit?')) e.preventDefault();
+let elements = document.getElementsByClassName('editStudent');
+let confirmIt = function (element) {
+    if (!confirm('Are you sure edit?')) element.preventDefault();
 };
-for (let index = 0, l = elems.length; index < l; index++) {
-    elems[index].addEventListener('click', confirmIt, false);
+for (let index = 0, l = elements.length; index < l; index++) {
+    elements[index].addEventListener('click', confirmIt, false);
 }
+
+

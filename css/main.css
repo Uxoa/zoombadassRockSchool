@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+@import url(./forms.css);
+
 body {
     margin:0;
     padding:0;
@@ -24,25 +26,17 @@ a{
 
 
 header {
-    width:100%;
+   width:100%;
    background-color:#000000;
 
 
 }
 
-header img.logo{
-    width:360px;
+.logo{
+    width:300px;
     height:auto;
-    text-align:center;
 }
 
-.titleAndActionCreate{
-    width:100%;
-    display:flex;
-    text-align: center;
-    flex-direction:row;
-    padding-bottom:30px;
-}
 
 
 
@@ -54,26 +48,6 @@ h1{
     margin:15px 0 5px 0;
     padding:0;
     text-align:center;
-}
-
-
-
-.actionCreate{
-    width:auto;
-    padding:10px 5px 10px 5px;
-    margin:auto;
-    background:#357D22;
-    border-radius:12px;
-    letter-spacing: 1px;
-    text-transform:uppercase;
-    font-size:12px;
-    display: flex;
-}
-
-
-a.actionCreate:hover{
-background:black;
-display: flex;
 }
 
 
@@ -89,19 +63,19 @@ display: flex;
     border-radius:10px;
     letter-spacing: 1px;
     text-transform:uppercase;
-    font-size:12px;
+    font-size:11px;
     justify-content: center;
 }
 
 .actionEdit{
     width:auto;
     padding:5px;
-    margin-top:10px;
+    margin-top:5px;
     background:orange;
     border-radius:10px;
     letter-spacing: 1px;
     text-transform:uppercase;
-    font-size:12px;
+    font-size:11px;
     justify-content: center;
 }
 
@@ -127,18 +101,23 @@ button{appearance: auto;
     border-color: none;
     border-image: none;}
 
-a.button.actionCancel{
+a button.actionCancel{
+    font-family: 'Roboto Condensed', sans-serif;
     width:auto;
     padding:5px;
-    margin-top:10px;
+    margin:10px auto;
     background:blue;
     border-radius:10px;
     letter-spacing: 1px;
+    color:#ffffff;
+    cursor:pointer;
     text-transform:uppercase;
     font-size:12px;
-    justify-content: center;
 }
 
+a:hover button.actionCancel{
+    background:black;
+}
 
 a.actionDelete:hover{
 background:black;
@@ -148,23 +127,53 @@ a.actionEdit:hover{
     background:black;
     }
 
-    a.actionCancel:hover{
-        background:black;
+a.actionCancel:hover{
+    background:black;
         }
 
+
+
+ .titleAndActionCreate{
+     width:100%;
+     height:50px;
+     display:flex;
+     text-align: center;
+     flex-direction:row;
+     padding-bottom:10px;
+     justify-content:space-evenly;
+    position:relative;
+ }
+        
+.actionCreate{
+    width:auto;
+    padding:10px 5px 10px 5px;
+    margin:auto;
+    background:#357D22;
+    border-radius:12px;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    font-size:12px;
+    position:absolute;
+    }
+        
+        
+a.actionCreate:hover{
+    background:black;
+    display: flex;
+    }
+        
 .actionCreate:hover + #bars {
     display: block;
     color: red;
   }
 
 #bars {
+    width: 40px;
     height: 30px;
     position: relative;
-    display:flex;
-    width: 40px;
-    left:-28%;
+    left:90px;
     margin-bottom:10px;
-    display: none;
+   display:none;
 }
 
 .bar {
@@ -264,18 +273,7 @@ thead tr th.col{
     color: white;
   }
 
-.boxFormCreate{
-   width:40%;
-    display:table;
-    margin:auto auto 40px auto;
-    box-sizing: content-box;
-    background:#ffffff;    
-    opacity: 0.8;
-    border-radius:25px;
-    border:2px solid #000000;
-    padding:10px;
-        
-}
+
 
 
 
