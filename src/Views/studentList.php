@@ -6,11 +6,15 @@
 
 
 
-<h1>Students class reservations</h1>
 
 <main>
 
 <div class="titleAndActionCreate">
+
+
+<h1>Students class reservations</h1>
+
+
     <a href="?action=create" class="actionCreate" onclick="executeExample('multipleInputs')">Add reservation</a> 
 
     <div id="bars">
@@ -53,8 +57,12 @@
                             <td class='dateSmall'>{$student->getDateTime()}</td>
                             <td class='actionButtons'>
                             
-                            <a href='?action=delete&id={$student->getId()}' class='actionDelete'> delete </a>
-                            <a href='?action=edit&id={$student->getId()}' class='actionEdit'> edit </a>
+                               <div class='boxActionDelete' onclick='executeExample('multipleInputs')'>
+                                  <a href='?action=delete&id={$student->getId()}' class='actionDelete'> delete </a><img class='iconDel' src='./public/images/deleteStudentIcon01.png' alt='Delete Student Icon'/>
+                               </div>
+                               <div class='boxActionEdit'>
+                                  <a href='?action=edit&id={$student->getId()}' class='actionEdit'> edit </a><img class='iconDel' src='./public/images/editStudentIcon01.png' alt='Edit Student Icon'/>
+                               </div>
                             </td>
                         </tr>
                         ";
