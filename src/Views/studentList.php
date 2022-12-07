@@ -8,14 +8,10 @@
 
 
 <main>
-
-<div class="titleAndActionCreate">
-
-
 <h1>Students class reservations</h1>
 
-
-    <a href="?action=create" class="actionCreate" onclick="executeExample('multipleInputs')">Add reservation</a> 
+<div class="titleAndActionCreate">
+  <a href="?action=create" class="actionCreate" onclick="executeExample('multipleInputs')">Add reservation</a> 
 
     <div id="bars">
     <div class="bar"></div>
